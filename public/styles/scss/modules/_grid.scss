@@ -1,0 +1,115 @@
+.grid-container {
+  background-color: #04AFEF;
+  margin: auto;
+  width: 600px;
+  height: 800px;
+  border: 2px black solid;
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+
+  #display {
+    margin: 10px auto 0 auto;
+    width: 550px;
+    height: 75px;
+    border: 2px black solid;
+    grid-column: 1 / span 4;
+  }
+
+  .button {
+    margin: 0 auto;
+    background-color: #ddd;
+    width: 70px;
+    height: 50px;
+    border: 1px black solid;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .button:hover {
+    background-color: #bbb;
+  }
+
+  .LP {
+
+  }
+
+  .RP {
+
+  }
+
+  .Percent {
+
+  }
+
+  .AC {
+    color: red;
+  }
+
+  .Seven {
+
+  }
+
+  .Eight {
+
+  }
+
+  .Nine {
+
+  }
+
+  .Divide {
+
+  }
+
+  .Four {
+
+  }
+
+  .Five {
+
+  }
+
+  .Six {
+
+  }
+
+  .Multiply {
+
+  }
+
+  .One {
+
+  }
+
+  .Two {
+
+  }
+
+  .Three {
+
+  }
+
+  .Subtract {
+
+  }
+
+  .Zero {
+
+  }
+
+  .Decimal {
+
+  }
+
+  .Equal {
+    color: green;
+  }
+
+  .Add {
+
+  }
+}
