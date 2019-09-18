@@ -10,20 +10,10 @@
   <body>
     <div class="grid-container">
       <div id="display">
+        0
       </div>
-      <div class="button LP" onclick="display('(')">
-        (
-      </div>
-      <div class="button RP" onclick="display(')')">
-        )
-      </div>
-      <div class="button Percent" onclick="display('%')">
-        %
-      </div>
-      <div class="button AC" onclick="allClear()">
-        AC
-      </div>
-      <div class="button Seven" onclick="display(7)">
+
+      <div class="button Seven" onclick="display('7')">
         7
       </div>
       <div class="button Eight" onclick="display(8)">
@@ -32,7 +22,7 @@
       <div class="button Nine" onclick="display(9)">
         9
       </div>
-      <div class="button Divide" onclick="display('/')">
+      <div class="button Divide" onclick="operator('/')">
         /
       </div>
       <div class="button Four" onclick="display(4)">
@@ -44,7 +34,7 @@
       <div class="button Six" onclick="display(6)">
         6
       </div>
-      <div class="button Multiply" onclick="display('*')">
+      <div class="button Multiply" onclick="operator('*')">
         *
       </div>
       <div class="button One" onclick="display(1)">
@@ -56,19 +46,19 @@
       <div class="button Three" onclick="display(3)">
         3
       </div>
-      <div class="button Subtract" onclick="display('-')">
+      <div class="button Subtract" onclick="operator('-')">
         -
+      </div>
+      <div class="button AC" onclick="allClear()">
+        AC
       </div>
       <div class="button Zero" onclick="display(0)">
         0
       </div>
-      <div class="button Decimal" onclick="display('.')">
-        .
-      </div>
-      <div class="button Equal" onclick="solve()">
+      <div class="button Equal" onclick="answer()">
         =
       </div>
-      <div class="button Add" onclick="display('+')">
+      <div class="button Add" onclick="operator('+')">
         +
       </div>
     </div>
