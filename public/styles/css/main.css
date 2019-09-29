@@ -14,10 +14,12 @@
   align-items: center; }
   .grid-container #display {
     margin: 10px auto 0 auto;
-    width: 550px;
+    width: 545px;
     height: 75px;
     border: 2px black solid;
-    grid-column: 1 / span 4; }
+    grid-column: 1 / span 4;
+    font-size: 70px;
+    overflow: hidden; }
   .grid-container .button {
     margin: 0 auto;
     background-color: #ddd;

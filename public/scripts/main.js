@@ -11,19 +11,24 @@ function screenDisplay() {
 
 //Hit button make number display
 function display(input) {
-  document.getElementById('display').innerHTML = "";
-  var i = input;
-  var display = document.getElementById('display').innerHTML + i;
-  document.getElementById('display').innerHTML = display;
-  var sd = screenDisplay();
+  var inputNumber = input;
+  var currentDisplay = screenDisplay();
+  var newDisplay = currentDisplay + inputNumber;
+
+  if(currentDisplay == 0 || typeof currentDisplay !== 'number') {
+    document.getElementById('display').innerHTML = inputNumber;
+  } else {
+    document.getElementById('display').innerHTML = newDisplay;
+  }
 }
 
 //Hit operator button
 function operator(input) {
+  var sd = screenDisplay();
   var operator = input;
   getFirstValue();
   currentOperator = operator;
-  document.getElementById('display').innerHTML = "";
+  document.getElementById('display').innerHTML = operator;
 }
 
 //Save first value into variable
