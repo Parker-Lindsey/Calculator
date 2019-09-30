@@ -11,7 +11,8 @@
   grid-gap: 10px;
   justify-content: center;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  box-shadow: 1px 1px 1px black; }
   .grid-container #display {
     margin: 10px auto 0 auto;
     width: 545px;
@@ -19,7 +20,8 @@
     border: 2px black solid;
     grid-column: 1 / span 4;
     font-size: 70px;
-    overflow: hidden; }
+    overflow: hidden;
+    box-shadow: 1px 1px 1px black; }
   .grid-container .button {
     margin: 0 auto;
     background-color: #ddd;
@@ -27,12 +29,17 @@
     height: 50px;
     border: 1px black solid;
     font-size: 40px;
-    font-weight: bold; }
+    font-weight: bold;
+    box-shadow: 1px 1px 1px black; }
   .grid-container .button:hover {
     background-color: #bbb; }
   .grid-container .AC {
     color: red; }
+  .grid-container .AC:hover {
+    background-color: #ff726f; }
   .grid-container .Equal {
     color: green; }
+  .grid-container .Equal:hover {
+    background-color: #4ee44e; }
 
 /*# sourceMappingURL=main.css.map */

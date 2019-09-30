@@ -61,7 +61,13 @@ function answer() {
     answer = +firstValue + +secondValue;
   }
   document.getElementById('display').innerHTML = answer;
-  console.log(answer);
+
+  createAnsBox(answer);
+}
+
+//Display the last answer
+function createAnsBox(ans) {
+  
 }
 
 //All Clear

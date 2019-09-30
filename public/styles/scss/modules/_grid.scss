@@ -9,6 +9,8 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+  box-shadow: 1px 1px 1px black;
+
 
 
   #display {
@@ -19,6 +21,8 @@
     grid-column: 1 / span 4;
     font-size: 70px;
     overflow: hidden;
+    box-shadow: 1px 1px 1px black;
+
 
   }
 
@@ -30,6 +34,7 @@
     border: 1px black solid;
     font-size: 40px;
     font-weight: bold;
+    box-shadow: 1px 1px 1px black;
   }
 
   .button:hover {
@@ -50,6 +55,10 @@
 
   .AC {
     color: red;
+  }
+
+  .AC:hover {
+    background-color: #ff726f;
   }
 
   .Seven {
@@ -110,6 +119,10 @@
 
   .Equal {
     color: green;
+  }
+
+  .Equal:hover {
+    background-color: #4ee44e;
   }
 
   .Add {
