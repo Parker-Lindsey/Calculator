@@ -68,12 +68,9 @@ function answer() {
     document.getElementById('display').innerHTML = answer.toFixed(10);
   }
 
-  createAnsBox(answer);
-}
-
-//Display the last answer
-function createAnsBox(ans) {
-
+  if (Number.isNaN(answer)) {
+    document.getElementById('display').innerHTML = "Undefined";
+  }
 }
 
 //All Clear
