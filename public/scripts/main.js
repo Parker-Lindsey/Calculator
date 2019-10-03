@@ -15,11 +15,12 @@ function display(input) {
   var currentDisplay = screenDisplay();
   var newDisplay = currentDisplay + inputNumber;
 
-  if(currentDisplay == 0 || typeof currentDisplay !== 'number') {
+  if(currentDisplay == 0  || currentDisplay == '+' || currentDisplay == '-' || currentDisplay == '/' || currentDisplay == '*') {
     document.getElementById('display').innerHTML = inputNumber;
   } else {
     document.getElementById('display').innerHTML = newDisplay;
   }
+  console.log(inputNumber, newDisplay);
 }
 
 //Hit operator button
@@ -60,14 +61,19 @@ function answer() {
   } else if(currentOperator == '+'){
     answer = +firstValue + +secondValue;
   }
-  document.getElementById('display').innerHTML = answer;
+
+  if(Number.isInteger(answer)) {
+      document.getElementById('display').innerHTML = answer;
+  } else if(!(Number.isInteger(answer))) {
+    document.getElementById('display').innerHTML = answer.toFixed(10);
+  }
 
   createAnsBox(answer);
 }
 
 //Display the last answer
 function createAnsBox(ans) {
-  
+
 }
 
 //All Clear
